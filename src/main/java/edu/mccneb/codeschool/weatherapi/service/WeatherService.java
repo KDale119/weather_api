@@ -19,8 +19,8 @@ public class WeatherService {
         this.weatherMapper = weatherMapper;
     }
 
-    public ResponseEntity<WeatherDTO> getWeather(){
-        WeatherAPI weather = weatherClient.getWeatherBy();
+    public ResponseEntity<WeatherDTO> getWeather(String q){
+        WeatherAPI weather = weatherClient.getWeather(q);
         return ResponseEntity.ok(weatherMapper.mapWeather(weather));
     }
 }

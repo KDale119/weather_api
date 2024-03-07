@@ -3,7 +3,7 @@ package edu.mccneb.codeschool.weatherapi.model;
 public class Time {
     Boolean current;
 
-    String lastUpdatedFateTime;
+    String lastUpdatedDateTime;
 
     public Boolean getCurrent() {
         return current;
@@ -13,11 +13,11 @@ public class Time {
         this.current = current;
     }
 
-    public String getLastUpdatedFateTime() {
-        return lastUpdatedFateTime;
+    public String getLastUpdatedDateTime() {
+        return lastUpdatedDateTime;
     }
 
     public void setLastUpdatedFateTime(String lastUpdatedFateTime) {
-        this.lastUpdatedFateTime = lastUpdatedFateTime;
+        this.lastUpdatedDateTime = lastUpdatedFateTime;
     }
 }

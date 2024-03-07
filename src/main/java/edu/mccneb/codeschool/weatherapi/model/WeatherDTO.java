@@ -3,8 +3,7 @@ package edu.mccneb.codeschool.weatherapi.model;
 import java.util.UUID;
 
 public class WeatherDTO {
-    private String id;
-    private UUID newId;
+    private UUID id;
     private String name;
     private String region;
     private String country;
@@ -12,67 +11,66 @@ public class WeatherDTO {
     private Time time;
     private Weather weather;
 
-    public String getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public WeatherDTO setId(UUID id) {
         this.id = id;
-    }
-
-    public UUID getNewId() {
-        return newId;
-    }
-
-    public void setNewId(UUID newId) {
-        this.newId = newId;
+        return this;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public WeatherDTO setName(String name) {
         this.name = name;
+        return this;
     }
 
     public String getRegion() {
         return region;
     }
 
-    public void setRegion(String region) {
+    public WeatherDTO setRegion(String region) {
         this.region = region;
+        return this;
     }
 
     public String getCountry() {
         return country;
     }
 
-    public void setCountry(String country) {
+    public WeatherDTO setCountry(String country) {
         this.country = country;
+        return this;
     }
 
     public Double getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(Double latitude) {
+    public WeatherDTO setLatitude(Double latitude) {
         this.latitude = latitude;
+        return this;
     }
 
     public Time getTime() {
         return time;
     }
 
-    public void setTime(Time time) {
+    public WeatherDTO setTime(Time time) {
         this.time = time;
+        return this;
     }
 
     public Weather getWeather() {
         return weather;
     }
 
-    public void setWeather(Weather weather) {
+    public WeatherDTO setWeather(Weather weather) {
         this.weather = weather;
+        return this;
     }
 }

@@ -2,6 +2,7 @@ package edu.mccneb.codeschool.weatherapi.model;
 
 public class WeatherAPI {
 
+
     private String id;
     private String name;
     private String region;
@@ -9,6 +10,7 @@ public class WeatherAPI {
     private Double latitude;
     private Time time;
     private Weather weather;
+    private String q;
 
     public String getId() {
         return id;
@@ -64,5 +66,13 @@ public class WeatherAPI {
 
     public void setWeather(Weather weather) {
         this.weather = weather;
+    }
+
+    public String getQ() {
+        return q;
+    }
+
+    public void setQ(String q) {
+        this.q = q;
     }
 }
