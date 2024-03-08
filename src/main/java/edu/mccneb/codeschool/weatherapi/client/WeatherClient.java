@@ -1,10 +1,8 @@
 package edu.mccneb.codeschool.weatherapi.client;
 
-import edu.mccneb.codeschool.weatherapi.model.WeatherAPI;
+import edu.mccneb.codeschool.weatherapi.model.external.WeatherAPI;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-
-import java.util.Map;
 
 @Component
 public class WeatherClient {
@@ -15,7 +13,7 @@ public class WeatherClient {
     }
 
     public WeatherAPI getWeather(String q){
-        return restTemplate.getForObject("https://weatherapi-com.p.rapidapi.com/current.json?q=53.1%2C-0.13", WeatherAPI.class, q);
+        return restTemplate.getForObject("https://weatherapi-com.p.rapidapi.com/current.json?q={q}", WeatherAPI.class, q);
     }
 
 }

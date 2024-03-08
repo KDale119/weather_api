@@ -5,7 +5,7 @@ public class Weather {
     Double feelsLikeTemp;
     String tempUnit;
     Integer humidity;
-    Wind wind;
+
 
     public Double getTemp() {
         return temp;
@@ -39,11 +39,4 @@ public class Weather {
         this.humidity = humidity;
     }
 
-    public Wind getWind() {
-        return wind;
-    }
-
-    public void setWind(Wind wind) {
-        this.wind = wind;
-    }
 }

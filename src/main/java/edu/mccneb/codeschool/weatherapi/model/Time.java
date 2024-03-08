@@ -17,7 +17,7 @@ public class Time {
         return lastUpdatedDateTime;
     }
 
-    public void setLastUpdatedFateTime(String lastUpdatedFateTime) {
-        this.lastUpdatedDateTime = lastUpdatedFateTime;
+    public void setLastUpdatedDateTime(String lastUpdatedDateTime) {
+        this.lastUpdatedDateTime = lastUpdatedDateTime;
     }
 }
