@@ -1,0 +1,6 @@
+api:
+  weather:
+    host: https://weatherapi-com.p.rapidapi.com
+    path: /current.json
+    api-host: weatherapi-com.p.rapidapi.com
+    api-key: 19363a26e4msh749e8cb1644bb94p11aba1jsn25391c4eb876

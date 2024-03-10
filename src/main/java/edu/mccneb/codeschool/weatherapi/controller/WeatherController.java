@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @Controller
-@RequestMapping("/api/v1/weather")
+//@RequestMapping("/api/v1/weather")
 public class WeatherController {
 
     private final WeatherService weatherService;
@@ -18,9 +18,14 @@ public class WeatherController {
     }
 
 
-    @GetMapping("/zipCode")
+    @GetMapping("/api/v1/weather/zipCode")
     public ResponseEntity<WeatherDTO> getWeather(@RequestParam String q){
         return weatherService.getWeather(q);
+    }
+
+    @GetMapping("/api/v2/weather/zipCode")
+    public ResponseEntity<WeatherDTO> getWeatherV2(@RequestParam String q){
+        return weatherService.getWeatherReactive(q);
     }
 }
 
