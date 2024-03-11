@@ -33,7 +33,7 @@ public class WeatherClient2 {
     public Mono<WeatherAPI> getWeather(String q){
         return webClient.get().uri(uriBuilder -> uriBuilder
                         .path(weatherConfig.getPath())
-                        .queryParam("q", "68133")
+                        .queryParam("q", q)
                         .build(q))
                 .retrieve()
                 .bodyToMono(WeatherAPI.class);
